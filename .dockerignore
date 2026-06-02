@@ -1,0 +1,6 @@
+# Keep the image build context explicit: deny everything, then allow only the
+# verified Vault release artifacts under dist/ that the builder stage needs.
+*
+
+!dist/
+!dist/**
